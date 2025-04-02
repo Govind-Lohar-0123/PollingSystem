@@ -63,7 +63,7 @@ export default function QuesComponent() {
         id = setInterval(() => {
             setTimer(prevTimer => {   // updator function
 
-                if (prevTimer < 5) {
+                if (prevTimer < 60) {
                     return prevTimer + 1;
                 } else {
 
