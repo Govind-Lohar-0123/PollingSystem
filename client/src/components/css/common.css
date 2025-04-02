@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.text-bold{
+    font-weight: bold;
+ 
+}
+.showAns {
+    background-color: blue;
+    width:25%;
+    
+    color:white;
+
+}
+.align-items-center{
+    align-items: center!important;
+}
+
+
+main{
+    background-color: white;
+    text-align: center;
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.role div{
+    width:80%;
+   
+    border-radius:10px;
+    
+    color:white;
+}
