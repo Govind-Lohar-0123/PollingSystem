@@ -1,12 +1,12 @@
 import axios from "axios";
-
+import serverUrl from "../../partials/data";
 
 export const addStudentQues = async (ques, stu_name) => {
     let data = { ques, stu_name: stu_name };
     try {
         let res = await axios({
             method: "post",
-            url: `http://localhost:8000/addstudentallques`,
+            url:`${serverUrl}/addstudentallques`,
             data: { ques: data }
         })
 
@@ -21,7 +21,7 @@ export const getStudentAllQues = (stu_id) => async (disptach) => {
     try {
         let res = await axios({
             method: "post",
-            url: `http://localhost:8000/getstudentallques`,
+            url: `${serverUrl}/getstudentallques`,
             data: { stu_id }
         })
 
@@ -37,7 +37,7 @@ export const deleteStuHistory =async (stu_id) => {
     try {
         let res = await axios({
             method: "delete",
-            url: `http://localhost:8000/deletestuhistory/` + stu_id,
+            url: `${serverUrl}/deletestuhistory/` + stu_id,
 
         })
 
@@ -53,7 +53,7 @@ export const getAllStudentAllQues = () => async (disptach) => {
     try {
         let res = await axios({
             method: "get",
-            url: `http://localhost:8000/getallstudentallques`,
+            url: `${serverUrl}/getallstudentallques`,
 
         })
 
